@@ -7,8 +7,12 @@ Author: CasePress
 Author URI: http://casepress.org
 GitHub Plugin URI: https://github.com/systemo-biz/casepress-structure
 GitHub Branch: master
-Version: 20150627-1
+Version: 20150627-2
 */
 
 
-include 'inc/model.php';
+include 'inc/process.php';
+include 'inc/branch.php';
+include 'inc/position.php';
+include 'inc/procedures.php';
+
