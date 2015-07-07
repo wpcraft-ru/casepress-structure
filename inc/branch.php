@@ -54,7 +54,7 @@ private static $_instance = null;
             </section>
             <section id="branche_indicators_s" class="section_cp">
                 <h1>Показатели</h1>
-                <?php echo wpautop(get_post_meta($post->ID, 'branche_indicators',true)); ?>           
+                <?php echo html_entity_decode(wpautop(get_post_meta($post->ID, 'branche_indicators',true))); ?>           
             </section>
         <?php
             //Получаем дочерние подразделения
@@ -227,7 +227,7 @@ private static $_instance = null;
         echo "<p>Опишите показатели подразделения</p>";
         
         wp_editor(
-            $branche_indicators,
+            html_entity_decode($branche_indicators),
             'brancheindicators',
             $settings = array(
                 'media_buttons' => 1,
